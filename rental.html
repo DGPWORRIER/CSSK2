@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Car</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('./assets/img/images.jpg');
+	    background-repeat: no-repeat;
+	    background-size: cover; 	           
+ 		color: #fff;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ffc107;
+            border-radius: 5px;
+            background-color: #222;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #ffc107;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="tel"],
+	input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ffc107;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #333;
+            color: #fff;
+        }
+        input[type="submit"] {
+            background-color: #ffc107;
+            color: #000;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #ffca28;
+        }
+        nav {
+            background-color:transparent;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+
+        nav .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        nav .logo img {
+            height: 40px;
+            margin-right: 15px;
+        }
+
+        nav .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+
+           
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="assets/img/favicon.png" alt="Company Logo">
+            
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="./index.html#about">About</a>
+            <a href="./index.html#contact">Contact</a>
+        </div>
+    </nav>   
+
+    <form class="form" action="https://api.web3forms.com/submit" role="form" method="POST">
+        <input type="hidden" name="access_key" value="cba08553-3307-4f4f-b3ba-3d4b20a001c0">
+        <h2>Start Your Journey </h2>
+
+    <label for="Enter Full Name">Full Name:</label>
+    <input type="text" id="Full_Name" name="Full_Name" required>
+
+    <label for="pickup_point">Pickup Point:</label>
+    <input type="text" id="pickup_point" name="pickup_point" required>
+    
+    <label for="destination_point">Destination Point:</label>
+    <input type="text" id="destination_point" name="destination_point" required>
+    
+    <label for="pickup_date">Pickup Date:</label>
+    <input type="date" id="pickup_date" name="pickup_date" required>
+    
+    <label for="return_date">Return Date:</label>
+    <input type="date" id="return_date" name="return_date" required>
+    
+    <label for="passenger_count">Number of Passengers:</label>
+    <input type="number" id="passenger_count" name="passenger_count" required>
+    
+    <label for="mobile_number">Mobile Number:</label>
+    <input type="tel" id="mobile_number" name="mobile_number" pattern="[0-9]{10}" placeholder="Enter 10-digit mobile number" required>
+    
+    <label for="car_type">Car Type:</label>
+    <select id="car_type" name="car_type" required>
+        <option value="">Select Car Type</option>
+        <option value="Sedan">Sedan</option>
+        <option value="SUV">SUV</option>
+        <option value="Luxury">Luxery</option>
+    </select>
+    <center>
+    <input type="submit" value="Submit Request">
+    </center>
+</form>
+<br>
+<footer style="text-align: center;">
+<div class="container">
+    <div class="copyright">
+        
+      &copy; Copyright <strong><span>CSSK</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/" style="color: #fff; font-family: Georgia, 'Times New Roman', Times, serif;">DGP</a>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
